@@ -28,7 +28,7 @@ const UserMenu = () => {
       >
         <MenuItem key={1}>
           <a
-            className="block px-4 py-2 text-sm text-profile data-focus:bg-[#242E38] data-focus:outline-hidden"
+            className="block px-4 py-2 text-sm text-profile data-focus:bg-[#232e3e] data-focus:outline-hidden"
             onClick={() => clerk.openUserProfile()}
           >
             Your Profile
@@ -38,7 +38,7 @@ const UserMenu = () => {
           redirectUrl={process.env.NEXT_PUBLIC_CLERK_SIGN_OUT_REDIRECT_URL}
         >
           <MenuItem key={2}>
-            <a className="block px-4 py-2 text-sm text-profile data-focus:bg-[#242E38] data-focus:outline-hidden">
+            <a className="block px-4 py-2 text-sm text-profile data-focus:bg-[#232e3e] data-focus:outline-hidden">
               Sign out
             </a>
           </MenuItem>

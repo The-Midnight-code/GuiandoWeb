@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0f1418;
+    --background: #0f141c;
     --foreground: #ededed;
   }
 }
@@ -38,11 +38,11 @@ body {
 }
 
 .bg-profile {
-  background-color: #1a2128;
+  background-color: #1e2836;
 }
 
 .border-profile {
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #283547;
 }
 
 .text-profile {
