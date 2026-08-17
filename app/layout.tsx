@@ -31,34 +31,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         lang="en"
         className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
       >
-        <body className="min-h-full flex flex-col">
-          <Disclosure as="nav" className="bg-gray-800 sticky top-0 z-50">
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              <div className="flex h-16 items-center justify-between">
-                <div className="flex items-center">
-                  <div className="shrink-0">
-                    <Link href="/">
-                      <img
-                        alt="Guiando App"
-                        className="size-12"
-                        src="/guiandoLogo.png"
-                      />
-                    </Link>
-                  </div>
-                  <div className="hidden md:block">
-                    <MenuList />
-                  </div>
-                </div>
-                <div className="hidden md:block">
-                  <div className="ml-4 flex items-center md:ml-6">
-                    <UserMenu />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Disclosure>
-          {children}
-        </body>
+        <body className="min-h-full flex flex-col">{children}</body>
       </html>
     </ClerkProvider>
   );
