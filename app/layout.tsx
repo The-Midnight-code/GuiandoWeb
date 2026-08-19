@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { dark } from "@clerk/ui/themes";
 import { Disclosure } from "@headlessui/react";
@@ -9,13 +9,8 @@ import "./globals.css";
 import MenuList from "../components/menu/MenuList";
 import UserMenu from "../components/menu/UserMenu";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const geisInter = Inter({
+  variable: "--font-inter-sans",
   subsets: ["latin"],
 });
 
@@ -27,10 +22,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <ClerkProvider appearance={{ theme: dark }}>
-      <html
-        lang="en"
-        className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-      >
+      <html lang="en" className={`${geisInter.variable} h-full antialiased`}>
         <body className="min-h-full flex flex-col">{children}</body>
       </html>
     </ClerkProvider>
